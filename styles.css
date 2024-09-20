@@ -19,7 +19,10 @@ body {
 }
 
 header {
-    padding: 0em 2rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 30px 8%;
 }
 
 /* Navbar CSS */
@@ -33,11 +36,12 @@ header {
 }
 
 .nav-new-links {
-    display: flex;
     list-style: none;
-    gap: 1rem;
     align-items: center;
-    padding-right: 7em;
+}
+
+.nav-new-links li {
+    display: inline-block;
 }
 
 .nav-anchors {
@@ -49,30 +53,22 @@ header {
     font-size: 1.2em;
     padding: .5em;
     position: relative;
-    float: left;
+    gap: 1rem;
 
 }
 
 .nav-anchors:hover {
     color: black;
-    box-shadow: inset 200px 0 0 0 #8a94c4;
+    box-shadow: inset 200px 0 0 0 #8a94c4;    
 }
 
-.icon-anchor {
-    padding: .1em;
+.nav-logo {
+    font-family: 'Tourney';
+    font-size: 2em;
     text-decoration: none;
     color: inherit;
-    font-size: 1.5em;
-    float: left;
-    font-weight: bold;
-    justify-content: flex-start;
 }
 
-.icon-anchor:hover {
-    background-color: black;
-    color: white;
-    padding: .1em;
-}
 
 .contact-button {
     background-color: #8a94c4;
@@ -100,6 +96,10 @@ header {
 .profile-picture {
     border-radius: 3em;
     border: .4em solid #70779e;
+    max-width: 400px;
+    min-width: 300px;
+    width: 100%;
+    height: auto;
 }
 
 .introduction {
@@ -149,9 +149,8 @@ header {
     overflow-wrap: break-word;
 }
 
-.about-container {
-    margin: 1em 7.5rem;
-
+.section-container {
+    margin: 1em 7.5rem 2em;
 }
 
 .section-titles {
@@ -162,4 +161,89 @@ header {
 
 .section-text {
     font-size: 1.7rem;
+    overflow-wrap: anywhere;
+}
+
+.icon-container {
+    /* gap: 2em; */
+    display: flex;
+}
+
+.custom-style {
+    width: 90px;
+    height: 90px;
+    font-size: 3rem;
+    color: #70779e;;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 35px;
+    border: solid 2px;
+    border-radius: 15%;
+    line-height: 1;
+    padding-top: 18px;
+}
+
+.experience-card {
+    background-color: rgb(37, 37, 37);
+    color: white;
+    border-radius: 1em;
+    padding: 2em;
+    margin: 3em 0em;
+
+}
+
+.technologies-span {
+    color: #70779e;
+    font-size: 1.6em;
+    font-weight: 300;
+    margin: .5em 0em;
+    /* text-align: center; */
+
+}
+
+.card-text {
+    font-size: 1.7em;
+    font-weight: 300;
+}
+
+.card-titles {
+    font-size: 2em;
+    margin-bottom: .7em;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(31em, 2fr));
+    grid-gap: 4em;
+    margin-top: 2em;
+    background: white;
+    color: white;
+    border-radius: 1em;
+}
+
+.project-cards {
+    height: 2fr;
+    padding: 2em;
+    background: #70779e;
+    border-radius: 1em;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    } 
+}
+
+/* change class name to tag that will be affected */
+.section-container {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }

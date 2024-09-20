@@ -1,0 +1,14 @@
+<svg width="100" height="30" xmlns="http://www.w3.org/2000/svg">
+ <title>Logo</title>
+ <defs>
+  <filter id="svg_8_blur">
+   <feGaussianBlur stdDeviation="0.4" in="SourceGraphic"/>
+  </filter>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <path stroke="#000" id="svg_2" d="m446.76,225.95042l0.38197,0l0.11803,-0.54067l0.11803,0.54067l0.38197,0l-0.30902,0.33415l0.11804,0.54067l-0.30902,-0.33416l-0.30902,0.33416l0.11804,-0.54067l-0.30902,-0.33415z" fill="#fff"/>
+  <text transform="matrix(1.36078 0 0 1.30374 -117.252 -64.0646)" stroke="#000" filter="url(#svg_1_blur)" font-style="italic" xml:space="preserve" text-anchor="start" font-family="'Tourney'" font-size="18" id="svg_4" y="600" x="86.94345" stroke-width="0.01" fill="#000000">Armenta</text>
+  <text transform="matrix(1.20505 0 0 1.20517 -0.410102 -0.491353)" stroke="#000" filter="url(#svg_8_blur)" xml:space="preserve" text-anchor="start" font-family="'Tourney'" font-size="18" id="svg_8" y="18.5" x="2" stroke-width="0.01" fill="#000000">Armenta</text>
+ </g>
+</svg>

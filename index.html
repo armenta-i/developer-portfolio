@@ -6,23 +6,29 @@
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <title>Ivan Armenta Portfolio</title>
 
+    <!-- Links to bring style to page -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="icon" href="./img/i_icon.png">
     <link rel="stylesheet" href="./styles.css">
     <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/0605571530.js" crossorigin="anonymous"></script>
+    <!--Get your code at fontawesome.com-->
 </head>
 <body>
     <!-- Navigation bar -->
     <header>
+        <a href="./" class="nav-logo">Armenta</a>
         <nav class="computer-navbar">
-            <a href="./" class="icon-anchor">Ivan Armenta's Portfolio</a>
             <div>
                 <ul class="nav-new-links">
-                    <li><a href="" class="nav-anchors">About</a></li>
-                    <li><a href="" class="nav-anchors">Projects</a></li>
+                    <li><a href="#about-section" class="nav-anchors">About</a></li>
+                    <li><a href="#project-section" class="nav-anchors">Projects</a></li>
                 </ul>
             </div>
-            <button class="contact-button"><a href="">Contact me</a></button>
         </nav>
+        <button class="contact-button"><a href="">Contact me</a></button>
     </header>
 
     <!-- Introduction Section -->
@@ -44,11 +50,78 @@
     </div>
 
     <!-- About me Section -->
-    <div class="about-container">
+    <div class="section-container" id="about-section">
         <h1 class="section-titles">About me</h1>
         <p class="section-text">
-            I have always loved building things from the ground up and seeing my vision come to fruition. This passion led me to become a software engineer. To pursue this path, I became proficient in HTML, CSS, JavaScript, Python, and Java. I thrive in collaborative environments and am open to learning new technologies and skills. Outside of coding, I enjoy reading, playing video games, and immersing myself in nature.
+            I have always loved building things from the ground up and seeing my vision come to fruition. This passion led me to become a software engineer. To pursue this path, I became proficient in HTML, CSS, JavaScript, Python, Java, and I am currently learning C. I thrive in collaborative environments and am open to learning new technologies and skills. Outside of coding, I enjoy reading, playing video games, and immersing myself in nature.
         </p>
+    </div>
+
+    <!-- Technologies -->
+    <div class="section-container" id="technologies-section">
+        <h1 class="section-titles"> Technologies</h1>
+            <div class="icon-container">
+                <i class="fa-brands fa-html5 custom-style"></i>
+                <i class="fa-brands fa-css3-alt custom-style"></i>
+                <i class="fa-brands fa-js custom-style"></i>
+                <i class="fa-brands fa-java custom-style"></i>
+                <i class="fa-brands fa-python custom-style"></i>
+                <i class="fa-brands fa-git-alt custom-style"></i>
+                <i class="fa-brands fa-github custom-style"></i>
+                <i class="fa-brands fa-ubuntu custom-style"></i>
+                <i class="fa-brands fa-windows custom-style"></i>
+            </div>
+    </div>
+
+    <!-- Experience section -->
+    <div class="section-container">
+        <h1 class="section-titles"> Experience</h1>
+        <div class="experience-card">
+            <h1 class="card-titles">Hiller Measurements</h1>
+            <p class="card-text"> I led the development of the Proteus ATE application, reducing the initial design time of a test rack system from 6+ months to just 4 weeks. This project involved designing and implementing three micro-services using Python and REST APIs, which managed front-end data storage in a SQL database. These micro-services were crucial for performing calculations that ensured accurate equipment placement on the test rack, optimizing space and preventing overheating.</p>
+            
+            <p class="technologies-span"> Python | HTML | CSS | JavaScript | TypeScript </p>
+
+            <p class="card-text">This experience allowed me to enhance my skills in full-stack development and 3D rendering, ultimately contributing to a more efficient design process for test systems.</p>
+        </div>
+    </div>
+
+    <div class="section-container">
+        <div class="experience-card">
+            <h1 class="card-titles">Novamex</h1>
+            <p class="card-text"> I optimized inventory management for the IT department by meticulously tracking and documenting all technological tools, peripherals, and software licenses used by over 100 employees across the company. Additionally, I provided technical support to more than 50 employees in external transportation warehouses, ensuring smooth operations and prompt issue resolution.</p>
+            
+            <p class="technologies-span"> HTML | CSS | JavaScript</p>
+
+            <p class="card-text" id="last-experience">This experience allowed me to enhance my skills in full-stack development and 3D rendering, ultimately contributing to a more efficient design process for test systems.</p>
+        </div>
+    </div>
+
+    <!-- Project section -->
+    <div class="section-container">
+        <h1 class="section-titles" id="project-section">Projects</h1>
+        <div class="project-list">
+            <!-- First project -->
+            <div class="project-cards">
+                <i class="fa-pen-to-square fa-html5 custom-style"></i>
+                <h1 class="card-titles">Smart SMS</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed consequatur quod tempora aspernatur, dolorem quos nemo necessitatibus ut itaque recusandae corrupti est eius assumenda beatae, molestiae atque nam enim totam?</p>
+            </div>
+
+            <div class="project-cards">
+                <i class="fa-pen-to-square fa-html5 custom-style"></i>
+                <h1 class="card-titles">Sketch pad</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed consequatur quod tempora aspernatur, dolorem quos nemo necessitatibus ut itaque recusandae corrupti est eius assumenda beatae, molestiae atque nam enim totam?</p>
+            </div>
+
+            <div class="project-cards">
+                <i class="fa-comment-sms fa-html5 custom-style"></i>
+                <h1 class="card-titles">Sketch pad</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed consequatur quod tempora aspernatur, dolorem quos nemo necessitatibus ut itaque recusandae corrupti est eius assumenda beatae, molestiae atque nam enim totam?</p>
+            </div>
+
+
+        </div>
     </div>
 </body>
 </html>
