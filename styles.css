@@ -58,7 +58,7 @@ header {
 }
 
 .nav-anchors:hover {
-    color: black;
+    color: white;
     box-shadow: inset 200px 0 0 0 #8a94c4;    
 }
 
@@ -76,12 +76,15 @@ header {
     border-color: #8a94c4;
     border: 0;
     color: white;
-    
+    transform: translateY(0px);
+    transition: transform 0.3s ease;
 }
 
 .contact-button:hover {
     background-color: #70779e;
-    color: black;
+    color: white;
+    transform: translateY(-2px);
+    transition: transform 0.3s ease;
 }
 
 .contact-button > a {
@@ -176,7 +179,7 @@ header {
     color: #70779e;;
     text-align: center;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     margin-left: 35px;
     border: solid 2px;
@@ -195,6 +198,7 @@ header {
     margin-bottom: 3px;
     padding-top: 0;
     font-size: 4rem;
+    align-items: center;
 }
 
 
@@ -212,7 +216,7 @@ header {
     font-size: 1.6em;
     font-weight: 300;
     margin: .5em 0em;
-    /* text-align: center; */
+    text-align: center;
 
 }
 
@@ -225,6 +229,8 @@ header {
     font-size: 2.2em;
     margin-bottom: .6em;
 }
+
+/* Project Section */
 
 .project-list {
     display: grid;
@@ -239,15 +245,26 @@ header {
 .project-cards {
     height: 2fr;
     padding: 2em;
-    background-color: #70779e;
+    background-color: rgb(37, 37, 37);
+    /* background-color: #70779e; */
     border-radius: 1em;
     transition: transform 0.3s ease;
     transform: translateY(0px);
 }
 
+.project-cards > a {
+    color: rgb(37, 37, 37);
+    transition: 0.5s ease-in;
+}
+
 .project-cards:hover {
     transition: transform 0.3s ease;
     transform: translateY(-10px);
+}
+
+.project-cards:hover > a {
+    transition: 0.5s ease-in;
+    color: #ffaea6;
 }
 
 .project-card-text {
@@ -260,6 +277,7 @@ header {
     font-size: 1.25em;
 }
 
+/* Scroll fade-in animation */
 @keyframes appear {
     from {
         opacity: 0;
@@ -277,3 +295,5 @@ header {
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
+
+/* Section with the information for contact */
