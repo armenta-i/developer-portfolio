@@ -185,6 +185,19 @@ header {
     padding-top: 18px;
 }
 
+.custom-style-project {
+    color: white;
+    margin-left: 0;
+    border: 0;
+    line-height: 0;
+    height: 70px;
+    width: 70px;
+    margin-bottom: 3px;
+    padding-top: 0;
+    font-size: 4rem;
+}
+
+
 .experience-card {
     background-color: rgb(37, 37, 37);
     color: white;
@@ -209,8 +222,8 @@ header {
 }
 
 .card-titles {
-    font-size: 2em;
-    margin-bottom: .7em;
+    font-size: 2.2em;
+    margin-bottom: .6em;
 }
 
 .project-list {
@@ -226,8 +239,25 @@ header {
 .project-cards {
     height: 2fr;
     padding: 2em;
-    background: #70779e;
+    background-color: #70779e;
     border-radius: 1em;
+    transition: transform 0.3s ease;
+    transform: translateY(0px);
+}
+
+.project-cards:hover {
+    transition: transform 0.3s ease;
+    transform: translateY(-10px);
+}
+
+.project-card-text {
+    font-size: 1.4em;
+}
+
+.project-links {
+    text-decoration: none;
+    color: #ffaea6;
+    font-size: 1.25em;
 }
 
 @keyframes appear {
