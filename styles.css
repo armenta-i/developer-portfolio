@@ -203,7 +203,7 @@ header {
 
 
 .experience-card {
-    background-color: rgb(37, 37, 37);
+    background-color: #252525;
     color: white;
     border-radius: 1em;
     padding: 2em;
@@ -297,3 +297,113 @@ header {
 }
 
 /* Section with the information for contact */
+.contact-me-section {
+    display: flex;
+    justify-content: space-around;
+    /* padding: 0em 10em; */
+}
+
+.contact-boxes {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact-right {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1em;
+}
+
+.contact-right-title h2 {
+    font-weight: 600;
+    color: #8a94c4;
+    font-size: 3em;
+    margin-bottom: 5px;
+}
+
+.contact-right-title hr {
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #8a94c4;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-inputs {
+    width: 500px;
+    height: 50px;
+    border: 1px solid black;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    /* -webkit-filter: invert(100%);
+    filter: invert(100%); */
+    border-radius: 50px;
+}
+
+.contact-right textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.contact-inputs::placeholder {
+    color: #a9a9a9;
+
+}
+
+.contact-right button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    /* font-size: 16px; */
+    font-size: 1em;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 2em;
+    background: linear-gradient(270deg, #252525, #8a94c4);
+    cursor: pointer;
+}
+
+.contact-right button a {
+    text-decoration: none;
+    color: inherit
+}
+
+.contact-right button img {
+    height: 15px;
+}
+
+.contact-info {
+    margin-top: .3em;
+    font-size: 1.4em;
+    display: flex;
+    gap: .4em;
+}
+
+.social-media-icons {
+    font-size: 2.5em;
+    gap: 1.5em;
+}
+
+.social-media-icons a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (max-width:800px) {
+    .contact-inputs {
+        width: 80vw;
+
+    }
+
+    .contact-right {
+        display: none;
+    }
+}

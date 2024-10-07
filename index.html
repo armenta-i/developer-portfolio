@@ -28,7 +28,7 @@
                 </ul>
             </div>
         </nav>
-        <button class="contact-button"><a href="">Contact me</a></button>
+        <button class="contact-button"><a href="#contact">Contact me</a></button>
     </header>
 
     <!-- Introduction Section -->
@@ -158,11 +158,33 @@
 
     <section id="contact">
         <div class="contact-me-section">
-            <div class="contact-info">
-                <button class="contact-button"><a href="./Resume_Ivan_Armenta.pdf" download="./Resume_Ivan_Armenta.pdf">Download Resume</button>
+            <div class="contact-boxes">
+                <div class="contact-right">
+                    <div class="contact-right-title">
+                        <h2>Get In Touch</h2>
+                        <hr>
+                    </div>
+                    <span class="contact-info"><i class="fa-solid fa-envelope-open"></i><p>i_armenta@outlook.com</p></span>
+                    <span class="contact-info"><i class="fa-solid fa-phone-flip"></i><p>575-915-5602</p></span>
+                    <div class="social-media-icons">
+                        <a href="https://github.com/armenta-i"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://www.linkedin.com/in/iarmenta/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/ivan.armenta19/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <button><a href="./Resume_Ivan_Armenta.pdf" download="Resume_Ivan_Armenta">Resume</a></button>
+                </div>
             </div>
-            <div class="contact-boxes"></div>
-        </div>        
+
+            <div class="contact-boxes">
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-right" >
+                    <input type="hidden" name="access_key" value="18458ed2-378f-42e0-ad7f-e9413a8ba687">
+                    <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                    <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+                    <textarea name="message" placeholder="Your Message" cols="30" rows="10" class="contact-inputs" required></textarea>
+                    <button type="submit">Submit<i class="fa-solid fa-arrow-right"></i></button>
+                </form>      
+            </div>    
+        </div> 
     </section>
     </body>
 </html>
